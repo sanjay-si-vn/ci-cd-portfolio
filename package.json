@@ -1,0 +1,11 @@
+{
+  "name": "ci-cd-portfolio",
+  "version": "1.0.0",
+  "description": "DevOps portfolio app with CI/CD",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js"
+  },
+  "author": "Sanjay",
+  "license": "MIT"
+}
