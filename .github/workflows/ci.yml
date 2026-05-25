@@ -47,4 +47,3 @@ jobs:
             -p 5000:5000 \
             --name portfolio \
             ${{ secrets.DOCKER_USERNAME }}/ci-cd-portfolio:latest
-            ${{ secrets.DOCKER_USERNAME }}/ci-cd-portfolio:latest
