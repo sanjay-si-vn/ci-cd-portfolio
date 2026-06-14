@@ -16,7 +16,7 @@ The application is automatically built, containerized, pushed to Docker Hub, and
 ---
 
 ## 2 Architecture Workflow
----
+```
 
 Developer Pushes Code
         ↓
@@ -39,7 +39,7 @@ Application Live on Browser
 ---
 
 # 3. CI/CD Workflow Diagram
----
+```
 flowchart TD
     A[Developer Pushes Code] --> B[GitHub Repository]
     B --> C[GitHub Actions Workflow]
@@ -49,10 +49,12 @@ flowchart TD
     F --> G[Pull Latest Docker Image]
     G --> H[Run Docker Container]
     H --> I[Application Live]
+
 ---
 
 # 📁 Project Structure
----
+
+```
 ci-cd-portfolio/
 │
 ├── app/
@@ -70,7 +72,8 @@ ci-cd-portfolio/
 ---
 
 # 5. Technologies Used
----
+
+``
 | Technology     | Purpose             |
 | -------------- | ------------------- |
 | Node.js        | Backend Application |
@@ -79,12 +82,13 @@ ci-cd-portfolio/
 | Docker Hub     | Container Registry  |
 | AWS EC2        | Cloud Server        |
 | Git & GitHub   | Version Control     |
+
 ---
 
 # 6. DevOps Concepts Learned
----
+```
 This project helped me learn:
-
+```
 * Linux basics
 * Git & GitHub workflow
 * Docker containerization
@@ -96,7 +100,7 @@ This project helped me learn:
 * SSH automation
 * Automated application deployment
 ---
-
+```
 # 7. Local Setup
 
 ## 1️⃣ Clone Repository
@@ -146,7 +150,7 @@ http://localhost:5000
 | Port Open     | 22, 5000 |
 
 ---
-
+```
 ## Install Docker on EC2
 
 sudo apt update
@@ -164,9 +168,9 @@ sudo usermod -aG docker ubuntu
 Reconnect SSH.
 
 ---
-
+```
 #  GitHub Secrets Configuration
-
+```
 Go to:
 
 Repository
@@ -183,13 +187,11 @@ Add these secrets:
 | EC2_HOST        | EC2 Public IP                       |
 | EC2_USERNAME    | ubuntu                              |
 | EC2_SSH_KEY     | Full PEM File Content               |
----
 
-
+```
 # ⚡ GitHub Actions Workflow
-
 File:
-
+```
 .github/workflows/ci.yml
 
 Workflow Process:
@@ -203,10 +205,9 @@ Workflow Process:
 7. Stop Old Container
 8. Run Updated Container
 
----
-
+```
 # 🔄 CI/CD Deployment Flow
-
+```
 Every time code is pushed:
 
 git add .
@@ -226,9 +227,9 @@ Access the application:
 http://YOUR_EC2_PUBLIC_IP:5000
 
 ---
-
+```
 #  Key Achievements
-
+```
 ✅ Built Dockerized Node.js Application
 
 ✅ Created GitHub Actions CI/CD Pipeline
@@ -238,9 +239,9 @@ http://YOUR_EC2_PUBLIC_IP:5000
 ✅ Automated AWS EC2 Deployment
 
 ✅ Learned Real DevOps Workflow
-
+```
 ---
-
+```
 # 📚 Future Improvements
 
 * Add Nginx Reverse Proxy
@@ -249,13 +250,13 @@ http://YOUR_EC2_PUBLIC_IP:5000
 * Deploy Multiple Containers
 * Add Kubernetes
 * Add Monitoring Tools
-
+```
 ---
-
+```
 # 👨‍💻 Author
 
 ## Sanjay
-
+```
 ## Screenshots
 <img width="1667" height="914" alt="Screenshot 2026-05-25 130313" src="https://github.com/user-attachments/assets/4397f603-2574-423f-bfad-29e06fc0c737" />
 <img width="1702" height="953" alt="Screenshot 2026-05-25 130221" src="https://github.com/user-attachments/assets/7ca3c65c-6ed7-4435-b37e-791a080f7f3d" />
