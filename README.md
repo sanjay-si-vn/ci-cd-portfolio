@@ -15,8 +15,8 @@ The application is automatically built, containerized, pushed to Docker Hub, and
 
 ---
 
-# 2 Architecture Workflow
-
+## 2 Architecture Workflow
+---
 
 Developer Pushes Code
         ↓
@@ -39,7 +39,7 @@ Application Live on Browser
 ---
 
 # 3. CI/CD Workflow Diagram
-
+---
 flowchart TD
     A[Developer Pushes Code] --> B[GitHub Repository]
     B --> C[GitHub Actions Workflow]
@@ -49,11 +49,10 @@ flowchart TD
     F --> G[Pull Latest Docker Image]
     G --> H[Run Docker Container]
     H --> I[Application Live]
-
 ---
 
 # 📁 Project Structure
-
+---
 ci-cd-portfolio/
 │
 ├── app/
@@ -68,11 +67,10 @@ ci-cd-portfolio/
 │
 ├── Dockerfile
 └── package.json
-
 ---
 
 # 5. Technologies Used
-
+---
 | Technology     | Purpose             |
 | -------------- | ------------------- |
 | Node.js        | Backend Application |
@@ -81,11 +79,10 @@ ci-cd-portfolio/
 | Docker Hub     | Container Registry  |
 | AWS EC2        | Cloud Server        |
 | Git & GitHub   | Version Control     |
-
 ---
 
 # 6. DevOps Concepts Learned
-
+---
 This project helped me learn:
 
 * Linux basics
@@ -98,7 +95,6 @@ This project helped me learn:
 * AWS EC2 deployment
 * SSH automation
 * Automated application deployment
-
 ---
 
 # 7. Local Setup
@@ -179,7 +175,7 @@ Repository
  → Actions
 
 Add these secrets:
-
+---
 | Secret Name     | Description                         |
 | --------------- | ----------------------------------- |
 | DOCKER_USERNAME | Docker Hub Username                 |
@@ -187,8 +183,8 @@ Add these secrets:
 | EC2_HOST        | EC2 Public IP                       |
 | EC2_USERNAME    | ubuntu                              |
 | EC2_SSH_KEY     | Full PEM File Content               |
-
 ---
+
 
 # ⚡ GitHub Actions Workflow
 
